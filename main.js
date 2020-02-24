@@ -63,7 +63,10 @@ class Main{
         console.log(this.doctor.getPerfil())
     }
 
-    
+    probarCita() {
+        let cita1 = new Cita(new Fecha(29,2,2020), new Tiempo(8,30,"pm"), new Doctor("8754", "Neurologo", new Nombre("Juan", "Perez"), 3129283717), new Paciente(new Nombre("Adrian", "Mendez", "Prado"), new Fecha(22,5,2001), 3121115653))
+        console.log(cita1.getPerfil())
+    }
 }
 
 let app = new Main()
@@ -77,3 +80,4 @@ app.probarTiempo()
 app.probarNombre()
 app.probarPaciente()
 app.probarDoctor()
+app.probarCita()
